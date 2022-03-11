@@ -1,0 +1,297 @@
+/* general style */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;  
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  html,body{
+    margin: 0;
+    font-family: "Playfair Display";
+    height:100%;
+  
+  }
+  h1{
+    font-family: "Playfair Display";
+    color: #821E1E;
+    font-size: 38px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #821E1E;
+    text-align: center;
+  }
+  
+  ul,li, a{
+    margin: 0;
+      padding: 0px;
+  }
+
+  /* NAV */ 
+  
+nav{
+  background-color:white;
+  display:flex;
+  padding:20px;
+  justify-content:center;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2;
+  gap: 40px;
+}
+#navbar a {
+    color: #821E1E;
+    font-size: 34px;
+    font-family: "Playfair Display";
+  }
+#navbar a:hover {
+    color: black;
+  }
+  
+  @media (max-width: 460px){
+    #navbar a{
+      font-size: 20px;
+    }
+    nav{
+      justify-content: center;
+      gap:20px;
+    }
+  }
+
+  /* WELCOME SECTION */
+
+.welcome-section {
+
+  height:100vh;
+  background-image:url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: left;
+}
+ 
+#ulian{
+  color:#821E1E;
+  margin:0px;
+}
+.welcome-section p{
+  font-size: 100px;
+  font-family: "Playfair Display";
+  margin-bottom: 0px;
+  margin-top: 50px;
+  padding-left: 60px;
+  color: white;
+}
+
+.welcome-section h1{
+  font-family: "poppins";
+  font-size: 1.5em;
+  color: white;
+  padding-left: 60px;
+}
+.iconcomputer{
+width: 1074px;
+ margin:auto;
+ display: flex;
+ justify-items: center;
+}
+.iconcomputer img{
+    width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 460px){
+
+.welcome-section p{
+  font-size: 40px;
+  font-family: "Playfair Display";
+  margin-top: 200px;
+  color: white;
+padding-left: 0px;
+}
+.welcome-section{
+  justify-content:left;
+  
+}
+.welcome-section h1{
+  font-size: 16px;
+padding-left: 0px;
+}
+
+}
+
+/* ABOUT */
+
+ .about{
+background-color: #F2E9E9;
+margin-bottom: 80px;
+width: 100%;
+} 
+
+.textabout {
+margin-left: 100px;
+margin-right: 100px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+font-size: 18px;
+font-family: "Poppins";
+padding-top:30px;
+padding-bottom:30px;
+}
+
+#hey{
+color: #821E1E;
+font-size: 1.2em;
+font-family: "Playfair Display";
+}
+
+@media (max-width: 460px){
+  .textabout{
+    padding: 10px;
+    margin: 0px;
+    font-size: 14px;
+  }
+}
+
+/* PROJECTS */
+
+#projects{
+width: 1074px;
+margin: auto;
+display:grid;
+grid-template-columns: 50% 50%;
+margin-bottom: 80px;
+}
+
+#projects h1 {
+grid-column:1/4;
+text-align: center;
+margin-bottom: 60px;
+}
+.project-tile{
+  grid-column: 1/2;
+  text-align:center;
+}
+.project-tile p{
+font-family:"poppins";
+}
+
+.project-tile img:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.project-tile2{
+grid-column:2/4;
+text-align:center;
+}
+.project-tile2 p{
+font-family:"poppins";
+}
+.project-tile2 img:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.iconexpand{
+width: 50px;
+height: 50px;
+ margin:auto;
+}
+
+@media (max-width: 460px){
+  
+#projects{
+width: 1074px;
+margin: auto;
+display:grid;
+grid-template-columns: 100%;
+margin-bottom: 80px;
+}
+.project-tile{
+grid-column: 1;
+margin-bottom: 30px;
+}
+.project-tile2{
+  grid-column: 1;
+}
+
+  h2 {
+    font-size: 20px;
+}
+}
+
+/* CONTACT */
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 2rem;
+  background: var(--main-gray);
+  background:#F2E9E9;
+  margin-top: 180px;
+ 
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding-bottom: 20px;
+}
+
+.contact-links a {
+  color: #821E1E;
+  font-size: 24px;
+  font-family: "poppins";
+}
+.contact-links a:hover{
+  color: black;
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.iconexpandless{
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 460px){
+  .contact {
+  margin-top: 40px;
+}
+
+.contact h1{
+  font-size: 30px;
+}
+
+
+.contact-links {
+  gap: 20px;
+
+}
+}
